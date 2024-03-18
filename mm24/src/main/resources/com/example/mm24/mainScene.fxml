@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="mainVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mm24.mainSceneController">
+   <children>
+      <HBox fx:id="topHBox" alignment="CENTER" prefHeight="75.0" prefWidth="600.0">
+         <children>
+            <Label text="Sort by">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Label>
+            <ChoiceBox fx:id="sortByBox" prefWidth="150.0">
+               <HBox.margin>
+                  <Insets right="200.0" />
+               </HBox.margin>
+            </ChoiceBox>
+            <Text fx:id="msgText" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to MMLIB24">
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Apercu-Bold" size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="searchBar" onKeyReleased="#keyPress" promptText="Search Book">
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="userSettingsButton" mnemonicParsing="false" onMouseClicked="#openUserSettingsMenu" text="User Settings" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <ScrollPane fx:id="mainPane" prefHeight="645.0" prefWidth="1280.0">
+         <content>
+            <VBox fx:id="bookVBox" prefHeight="643.0" prefWidth="1265.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>

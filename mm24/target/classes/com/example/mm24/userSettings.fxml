@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mm24.userSettingsController">
+   <children>
+      <TextField fx:id="userNameField" layoutX="126.0" layoutY="147.0" AnchorPane.bottomAnchor="600.0" />
+      <TextField fx:id="passwordField" layoutX="126.0" layoutY="231.0" AnchorPane.bottomAnchor="525.0" />
+      <TextField fx:id="firstNameField" layoutX="126.0" layoutY="301.0" AnchorPane.bottomAnchor="450.0" />
+      <TextField fx:id="emailField" layoutX="126.0" layoutY="426.0" AnchorPane.bottomAnchor="300.0" />
+      <TextField fx:id="lastNameField" layoutX="126.0" layoutY="361.0" AnchorPane.bottomAnchor="375.0" />
+      <Button fx:id="updateUserInfoButton" layoutX="125.0" layoutY="627.0" mnemonicParsing="false" onMouseClicked="#updateUserInfo" text="Update user information" AnchorPane.bottomAnchor="100.0" />
+      <Text layoutX="126.0" layoutY="471.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail Address">
+         <font>
+            <Font name="Apercu-Regular" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="126.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+         <font>
+            <Font name="Apercu-Regular" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="126.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+         <font>
+            <Font name="Apercu-Regular" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="126.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="Apercu-Regular" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="126.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+         <font>
+            <Font name="Apercu-Regular" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="topText" layoutX="126.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Settings" wrappingWidth="149.0" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="125.0">
+         <font>
+            <Font name="Apercu-Regular" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="deleteUserButton" layoutX="148.0" layoutY="665.0" mnemonicParsing="false" onMouseClicked="#deleteUser" text="Delete account" AnchorPane.bottomAnchor="50.0" />
+      <TextField fx:id="userIDField" layoutX="124.0" layoutY="546.0" AnchorPane.bottomAnchor="225.0" />
+      <Text layoutX="128.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User ID">
+         <font>
+            <Font name="Apercu-Regular" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="usernamePopUp" layoutX="154.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update aborted!" visible="false" AnchorPane.bottomAnchor="576.0" />
+      <Text fx:id="passwordPopUp" layoutX="145.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password updated!" visible="false" AnchorPane.bottomAnchor="501.0" />
+      <Text fx:id="namePopUp" layoutX="141.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name updated!" visible="false" AnchorPane.bottomAnchor="426.0" />
+      <Text fx:id="lastNamePopUp" layoutX="142.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name updated!" visible="false" AnchorPane.bottomAnchor="351.0" />
+      <Text fx:id="emailPopUp" layoutX="134.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email address updated!" visible="false" AnchorPane.bottomAnchor="276.0" />
+      <Text fx:id="IDPopUp" layoutX="151.0" layoutY="597.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update aborted!" visible="false" AnchorPane.bottomAnchor="199.0" />
+   </children>
+</AnchorPane>

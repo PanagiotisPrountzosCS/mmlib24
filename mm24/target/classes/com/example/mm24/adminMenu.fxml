@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="topVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mm24.adminMenuController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="1280.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="100.0" prefWidth="320.0" text="User Requests">
+               <font>
+                  <Font name="Apercu-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="100.0" prefWidth="320.0" text="Book Options">
+               <font>
+                  <Font name="Apercu-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="100.0" prefWidth="320.0" text="User Options">
+               <font>
+                  <Font name="Apercu-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="100.0" prefWidth="320.0" text="Currently Borrowed Books">
+               <font>
+                  <Font name="Apercu-Regular" size="16.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="100.0" prefWidth="320.0" text="Categories">
+               <font>
+                  <Font name="Apercu-Regular" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <children>
+            <ScrollPane prefHeight="620.0" prefWidth="320.0">
+               <content>
+                  <VBox fx:id="requestBox" prefHeight="618.0" prefWidth="305.0" />
+               </content>
+            </ScrollPane>
+            <ScrollPane prefHeight="620.0" prefWidth="320.0">
+               <content>
+                  <VBox fx:id="bookOptionsBox" prefHeight="618.0" prefWidth="305.0" />
+               </content>
+            </ScrollPane>
+            <ScrollPane prefHeight="620.0" prefWidth="320.0">
+               <content>
+                  <VBox fx:id="userOptionsBox" prefHeight="618.0" prefWidth="305.0" />
+               </content>
+            </ScrollPane>
+            <ScrollPane prefHeight="620.0" prefWidth="320.0">
+               <content>
+                  <VBox fx:id="borrowedBooksVBox" prefHeight="618.0" prefWidth="305.0" />
+               </content>
+            </ScrollPane>
+            <ScrollPane prefHeight="620.0" prefWidth="320.0">
+               <content>
+                  <VBox fx:id="categoriesVBox" prefHeight="618.0" prefWidth="305.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

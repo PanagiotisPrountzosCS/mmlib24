@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="signUpPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mm24.signUpController">
+   <children>
+      <Text layoutX="78.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MMLIB24 SIGN UP">
+         <font>
+            <Font name="Apercu-Regular" size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="126.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USERNAME">
+         <font>
+            <Font name="Apercu-Regular" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="usernameField" layoutX="126.0" layoutY="180.0" />
+      <Text layoutX="126.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PASSWORD">
+         <font>
+            <Font name="Apercu-Regular" size="14.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="passwordField" layoutX="126.0" layoutY="240.0" />
+      <Text layoutX="126.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FIRST NAME">
+         <font>
+            <Font name="Apercu-Regular" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="firstNameField" layoutX="126.0" layoutY="300.0" />
+      <Text layoutX="126.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LAST NAME">
+         <font>
+            <Font name="Apercu-Regular" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="lastNameField" layoutX="126.0" layoutY="360.0" />
+      <Text layoutX="126.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+         <font>
+            <Font name="Apercu-Regular" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="idField" layoutX="126.0" layoutY="420.0" />
+      <Text layoutX="126.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E-MAIL ADDRESS">
+         <font>
+            <Font name="Apercu-Regular" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="emailField" layoutX="126.0" layoutY="480.0" />
+      <Button fx:id="createAccount" layoutX="139.0" layoutY="560.0" mnemonicParsing="false" onMouseClicked="#attemptSignUp" text="Create Account" AnchorPane.leftAnchor="142.0" AnchorPane.rightAnchor="142.0" />
+      <Button fx:id="returnToLogInButton" layoutX="125.0" layoutY="620.0" mnemonicParsing="false" onMouseClicked="#goToLogInScene" text="Return to Log In page" AnchorPane.leftAnchor="124.0" AnchorPane.rightAnchor="123.0" />
+      <Text fx:id="errorMessage" layoutX="143.0" layoutY="532.0" strokeType="OUTSIDE" strokeWidth="0.0" text="empty" visible="false" wrappingWidth="116.0" />
+   </children>
+</AnchorPane>

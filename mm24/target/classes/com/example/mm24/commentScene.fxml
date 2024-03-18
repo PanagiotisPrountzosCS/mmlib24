@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mm24.commentSceneController">
+   <content>
+      <VBox fx:id="reviewsBox" alignment="TOP_CENTER" prefHeight="398.0" prefWidth="585.0">
+         <children>
+            <Text fx:id="topText" fill="#00aaff" strokeType="OUTSIDE" strokeWidth="0.0" text="Reviews of Book">
+               <font>
+                  <Font name="Apercu-Regular" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>
